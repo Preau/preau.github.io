@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-regular-webfont.eot');
+    src: url('fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-regular-webfont.woff') format('woff'),
+         url('fonts/roboto-regular-webfont.ttf') format('truetype'),
+         url('fonts/roboto-regular-webfont.svg#RobotoRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'RobotoThin';
+    src: url('fonts/roboto-thin-webfont.eot');
+    src: url('fonts/roboto-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-thin-webfont.woff') format('woff'),
+         url('fonts/roboto-thin-webfont.ttf') format('truetype'),
+         url('fonts/roboto-thin-webfont.svg#RobotoThRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('fonts/roboto-medium-webfont.eot');
+    src: url('fonts/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-medium-webfont.woff') format('woff'),
+         url('fonts/roboto-medium-webfont.ttf') format('truetype'),
+         url('fonts/roboto-medium-webfont.svg#RobotoLtRegular') format('svg');
+}
+
+body {
+    background: #EEEEEE;
+    background: -moz-linear-gradient(center top , #DDDDDD, #F2F2F2, #F2F2F2, #DDDDDD) no-repeat fixed left top;
+    background: -webkit-linear-gradient(center top , #DDDDDD, #F2F2F2, #F2F2F2, #DDDDDD) no-repeat fixed left top;
+    background: -o-linear-gradient(center top , #DDDDDD, #F2F2F2, #F2F2F2, #DDDDDD) no-repeat fixed left top;
+    background: -ms-linear-gradient(center top , #DDDDDD, #F2F2F2, #F2F2F2, #DDDDDD) no-repeat fixed left top;
+    background: linear-gradient(center top , #DDDDDD, #F2F2F2, #F2F2F2, #DDDDDD) no-repeat fixed left top;
+}
+
+a {
+    text-decoration: none;
+    color: #0099CC;
+}
+
+#pagewrapper {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+#logo {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    font-family: RobotoThin;
+    font-size: 72px;
+    color: #555555;
+}
+
+#menu {
+    margin: 0 auto;
+}
+
+.menuitem {
+    float:left;
+    width: 32%;
+    margin-bottom: 2%;
+    font-family: RobotoMedium;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    border-right: 1px solid #B7B7B7;
+}
+
+.menuitem:nth-child(1) {
+    border-left: 1px solid #B7B7B7;
+}
+
+.menuitem a {
+    display: block;
+    color: #555555;
+}
+
+.menuitemselected a, .menuitem a:hover  {
+    color: #0099CC;
+}
+
+#content {
+    clear: both;
+    font-family: Roboto;
+    font-size: 16px;
+    color: #555555;
+}
+
+h1 {
+    float: left;
+    width: 100%;
+    border-bottom: 1px #0099CC solid;
+    font-weight: normal;
+    font-size: 18px;
+    color: #0099CC;
+}
+
+.headertext {
+    float: left;
+    width: 100%;
+	margin-bottom: 10px;
+    border-bottom: 1px #0099CC solid;
+    font-weight: normal;
+    font-size: 18px;
+    color: #0099CC;
+}
+
+.subheadertext {
+	color: #0099CC;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+#footer {
+    float: right;
+    font-family: Roboto;
+    font-size: 12px;
+    color: #555555;
+}
+
+.portfolioitem {
+    position: relative;
+    float: left;
+    width: 268px;
+    margin: 10px 19px;
+}
+
+.portfolioitemimage {
+    border: 1px #555555 solid;
+}
+
+.portfolioitemimage:hover {
+    border: 1px #0099CC solid;
+}
+
+.portfolioitemtooltip {
+    position: absolute;
+    width: 268px;
+    height: 50px;
+    top: 101px;
+    left: 1px;
+    background: url('tooltipbg.png');
+    text-align: center;
+    line-height: 50px;
+    font-family: RobotoMedium;
+    font-size: 18px;
+}
+
+.portfolioseparator {
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+.portfoliopageimage {
+    float: right;
+    margin: 10px;
+}
+
+.portfoliobutton {
+	float: right;
+	margin-left: 30px;
+}
+
+.portfoliobutton a {
+	height: 100%;
+}
+
+.portfoliobutton img {
+	margin: 0;
+	padding-bottom: 3px;
+	vertical-align: middle;
+	border: 0;
+}
+
+.portfoliobuttontext {
+    color: #555555;
+    font-size: 15px;
+	line-height: 100%;
+	padding-bottom: 3px;
+	vertical-align: middle;
+}
+
+.portfoliobuttontext:hover {
+    color: #0099CC;
+}
+
+.contactinput {
+    width: 315px;
+    margin-bottom: 3px;
+}
+
+#contactsubmitbutton {
+    width: 100px;
+    margin-left: 220px;
+    border-top: none;
+    border-right: 1px #B7B7B7 solid;
+    border-left: none;
+    border-bottom: 2px #B7B7B7 solid;
+    background: #CECECE;
+    font-family: Roboto;
+    font-size: 16px;
+    color: #555555;
+}
+
+#thepixel {
+	position: relative;
+	top: 0;
+	right: 0;
+	width: 2px;
+	height: 2px;
+	background-color: #0099CC;
+}
