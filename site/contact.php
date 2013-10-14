@@ -8,6 +8,10 @@
     $errors = array();
     $success = false;
     if(!empty($_POST['submit'])) {
+        if(!empty($_POST['ditiseenpotmethoning'])) {
+            header('Location: /');
+            die();
+        }
         //Check for errors
         if(empty($_POST['name'])) {
             $errors[] = "Vul een geldige naam in.";
@@ -17,11 +21,6 @@
         }
         if(empty($_POST['message'])) {
             $errors[] = "Vul een geldig bericht in.";
-        }
-        require_once('plugins/securimage/securimage.php');
-	$securimage = new Securimage();
-        if ($securimage->check($_POST['captcha_code']) == false) {
-            $errors[] = "De anti-spam code was incorrect.";
         }
         if(!count($errors)) {
             //Send mail
@@ -59,24 +58,19 @@
                }
             ?>
             <p>
-                <input class="contactinput" name="name" type="text" 
+                <input id="name" class="contactinput" name="name" type="text"
                        <?php if(count($errors)) echo 'value="'.$_POST['name'].'"'; ?>
                 />
                 &nbsp;Naam
                 <br />
-                <input class="contactinput" name="email" type="text" 
+                <input id="email" class="contactinput" name="email" type="text"
                        <?php if(count($errors)) echo 'value="'.$_POST['email'].'"'; ?>
                 />
                 &nbsp;E-Mailadres
                 <br />
-                <textarea class="contactinput" name="message" rows="10" cols="29"><?php if(count($errors)) echo $_POST['message']; ?></textarea>
+                <textarea id="message" class="contactinput" name="message" rows="10" cols="29"><?php if(count($errors)) echo $_POST['message']; ?></textarea>
                 <span style="vertical-align:top">&nbsp;Bericht</span>
-                <br />
-                <img id="captcha" src="/plugins/securimage/securimage_show.php" alt="Antispam CAPTCHA Image" />
-                <a href="#" onclick="document.getElementById('captcha').src = '/plugins/securimage/securimage_show.php?' + Math.random(); return false" style="vertical-align:top">Andere Afbeelding</a>
-                <br />
-                <input class="contactinput" type="text" name="captcha_code" size="10" maxlength="6" />
-                &nbsp;Typ de tekst over
+                <input id="ditiseenpotmethoning" class="contactinput" name="ditiseenpotmethoning" type="text" />
             </p>
             <p>
                 <input id="contactsubmitbutton" type="submit" name="submit" value="Verzenden"/>
