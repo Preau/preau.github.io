@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
         <meta name="viewport" content="width=device-width">
         
-        <title>Koen van Zuylen</title>
+        <title>Koen van Zuijlen</title>
         <link rel="shortcut icon" type="image/x-icon" href="/style/favicon.ico" />
 		
         <script type="text/javascript" src="/plugins/google-analytics.js"></script>
@@ -26,7 +26,7 @@
 			<div id="thepixel">
 			</div>
             <div id="logo">
-                Koen van Zuylen
+                Koen van Zuijlen
             </div>
             <div id="menu">
                 <?php

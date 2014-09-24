@@ -27,6 +27,6 @@ $(document).ready(function() {
 	});
 	
 	$("#thepixel").click(function() {
-		window.location = "http://testing.koenvanzuylen.com/"
+		window.location = "http://testing.koenvanzuijlen.com/"
 	});
 });

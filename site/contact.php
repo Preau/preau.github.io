@@ -24,9 +24,9 @@
         }
         if(!count($errors)) {
             //Send mail
-            $to = "mail@koenvanzuylen.com";
+            $to = "mail@koenvanzuijlen.com";
             $replyto = $_POST['email'];
-            $headers = "From: contactform@koenvanzuylen.com" . "\r\n" . "Reply-To: $replyto";
+            $headers = "From: contactform@koenvanzuijlen.com" . "\r\n" . "Reply-To: $replyto";
             $subject = "Formulier Website";
             $body = "Naam: ".$_POST['name']."\n\n".$_POST['message'];
             if(mail($to, "Contactformulier Website", $body, $headers)) {
