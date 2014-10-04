@@ -1,3 +1,8 @@
 RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^koenvanzuylen.com [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.koenvanzuylen.com [NC]
+RewriteRule ^(.*)$ http://www.koenvanzuijlen.com/$1 [L,R=301,NC]
+
 RewriteRule ^portfolio/([a-zA-Z0-9-_]+)/$ portfolioitem.php?item=$1 [L]
 RewriteRule ^([a-zA-Z0-9-_]+)/$ $1.php [L]
