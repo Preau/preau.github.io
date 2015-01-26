@@ -114,7 +114,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-lg-offset-2">
-                        <p>I'm a <?=(date("md", date("U", mktime(0, 0, 0, 2,15, 1991))) > date("md") ? ((date("Y") - 1991) - 1) : (date("Y") - 1991))?>-year-old web developer from Rosmalen, the Netherlands. I've studied software engineering at Avans Hogeschool in 's-Hertogenbosch. I'm currently employed at <a href="http://www.interactivestudios.nl/" target="_blank">Interactive Studios</a> where I create online software, mobile apps and websites.</p>
+                        <p>I'm a <?=(date("md", date("U", mktime(0, 0, 0, 2,15, 1991))) > date("md") ? ((date("Y") - 1991) - 1) : (date("Y") - 1991))?>-year-old web developer from Rosmalen, the Netherlands. I've studied information technology at Avans Hogeschool in 's-Hertogenbosch. I'm currently employed at <a href="http://www.interactivestudios.nl/" target="_blank">Interactive Studios</a> where I create online software, mobile apps and websites.</p>
                     </div>
                     <div class="col-lg-4">
                         <p>I enjoy learning about and keeping up-to-date with all sorts of technology related stuff. Besides that my interests include listening to (mostly electronic) music, visiting music festivals and parties, photography, watching television series and movies and playing video games.</p>
