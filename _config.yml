@@ -10,12 +10,3 @@ markdown: kramdown
 
 sass:
   style: compressed
-
-gems:
-  - jekyll-timeago
-
-jekyll_timeago:
-  depth: 1
-  suffix: ''
-  years: ''
-  year: ''
