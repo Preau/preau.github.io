@@ -1,0 +1,128 @@
+---
+layout: default
+---
+
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header page-scroll">
+			<button class="hamburger hamburger--collapse navbar-toggle" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			  <span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			  </span>
+			</button>
+			<a class="navbar-brand" href="#page-top">Koen van Zuijlen</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="hidden">
+					<a href="#page-top"></a>
+				</li>
+				<li class="page-scroll">
+					<a href="#about">About</a>
+				</li>
+				<li class="page-scroll">
+					<a href="#aroundtheweb">Around the web</a>
+				</li>
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+	<!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<img class="img-responsive avatar" src="{{site.baseurl}}/images/avatar.png" alt="">
+				<div class="intro-text">
+					<span class="name">Koen van Zuijlen</span>
+					<hr class="star-light">
+					<span class="skills">Developer</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- About Section -->
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>About</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-2">
+        <p>I'm a {% timeago 1991-2-15 %}-year-old developer from 's-Hertogenbosch, the Netherlands. I'm currently employed at <a href="http://interactivestudios.nl" target="_blank">Interactive Studios</a> where I create mobile apps, online software and websites. I've studied information technology at Avans Hogeschool in 's-Hertogenbosch. </p>
+      </div>
+      <div class="col-lg-4">
+        <p>I enjoy learning about and keeping up-to-date with all sorts of technology related stuff. Besides that my interests include listening to and discovering new music, visiting music festivals and parties, photography and enjoying all kinds of media.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Around the web Section -->
+<section class="success" id="aroundtheweb">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2>Around the web</h2>
+				<hr class="star-light">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<p>Find me online</p>
+				<ul class="list-inline">
+					<li>
+						<a href="https://www.facebook.com/koenvanzuijlen" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+					</li>
+					<li>
+						<a href="https://twitter.com/DePreau" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/koenvanzuijlen" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+					</li>
+					<li>
+						<a href="https://github.com/Preau" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+					</li>
+					<li>
+						<a href="http://www.last.fm/user/DePreau" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-lastfm"></i></a>
+					</li>
+					<li>
+						<a href="mailto:contact@koenvanzuijlen.com" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope-o"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="footer-below">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          &copy; {{ site.time | date: '%Y' }} - Koen van Zuijlen
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+  <a class="btn btn-primary" href="#page-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+</div>
