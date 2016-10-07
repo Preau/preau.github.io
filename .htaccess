@@ -1,5 +1,0 @@
-RewriteEngine On
-
-RewriteCond %{HTTP_HOST} ^koenvanzuylen.com [NC,OR]
-RewriteCond %{HTTP_HOST} ^www.koenvanzuylen.com [NC]
-RewriteRule ^(.*)$ http://www.koenvanzuijlen.com/$1 [L,R=301,NC]
